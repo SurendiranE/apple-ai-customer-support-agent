@@ -1,0 +1,50 @@
+{
+  "evaluation_type": "local_llm_as_judge",
+  "llm_judge_available": true,
+  "model": "qwen2.5:3b",
+  "runtime": "Ollama",
+  "endpoint": "localhost:11434",
+  "n": 17,
+  "criteria": {
+    "groundedness": {
+      "human_mean": 4.0,
+      "judge_mean": 4.411764705882353,
+      "mae": 0.6470588235294118,
+      "exact_agreement_rate": 0.35294117647058826,
+      "within_1_point_rate": 1.0,
+      "pearson_correlation": null
+    },
+    "helpfulness": {
+      "human_mean": 2.9411764705882355,
+      "judge_mean": 3.0588235294117645,
+      "mae": 0.47058823529411764,
+      "exact_agreement_rate": 0.5882352941176471,
+      "within_1_point_rate": 0.9411764705882353,
+      "pearson_correlation": -0.3682298471593293
+    },
+    "tone": {
+      "human_mean": 4.0,
+      "judge_mean": 4.352941176470588,
+      "mae": 0.35294117647058826,
+      "exact_agreement_rate": 0.6470588235294118,
+      "within_1_point_rate": 1.0,
+      "pearson_correlation": null
+    },
+    "conciseness": {
+      "human_mean": 5.0,
+      "judge_mean": 3.2941176470588234,
+      "mae": 1.7058823529411764,
+      "exact_agreement_rate": 0.0,
+      "within_1_point_rate": 0.29411764705882354,
+      "pearson_correlation": null
+    },
+    "overall": {
+      "human_mean": 3.0,
+      "judge_mean": 3.3529411764705883,
+      "mae": 0.35294117647058826,
+      "exact_agreement_rate": 0.6470588235294118,
+      "within_1_point_rate": 1.0,
+      "pearson_correlation": null
+    }
+  }
+}
